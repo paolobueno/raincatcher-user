@@ -114,11 +114,11 @@ Base url : `/api/wfm/[group|user|membership|`
 
 Base url : `/api/wfm/user`
 
-| resource | method | returns |
-| -------- | ------ | ------- |
-| /auth | all | `{satus: 'ok', userId: username, sessionToken: sessiontoken, authResponse: profileData}` |
-| /verifysession | all | `{isValid: true}` |
-| /revokesession | all | `{}` |
+| resource | args | method | returns |
+| -------- | ------ | ------- | ---- |
+| /auth | all | username, password | `{satus: 'ok', userId: username, sessionToken: sessiontoken, authResponse: profileData}` |
+| /verifysession | all | | `{isValid: true}` |
+| /revokesession | all | | " `{}` |
 
 
 
