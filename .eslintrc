@@ -13,7 +13,7 @@
     "complexity": ["warn", 20],
     "eqeqeq": "error",
     "guard-for-in": "error",
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
     "no-array-constructor": "error",
     "no-console": "warn",
