@@ -27,7 +27,8 @@
     "space-before-blocks": "error",
     "space-before-function-paren": ["error", "never"],
     "keyword-spacing": ["error"],
-    "curly": ["error", "all"]
+    "curly": ["error", "all"],
+    "no-else-return": ["error"]
   },
   "globals": {
     "angular": false,
