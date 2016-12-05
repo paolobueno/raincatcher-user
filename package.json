@@ -30,6 +30,7 @@
     "load-grunt-tasks": "^3.5.2",
     "mocha": "2.4.5",
     "sinon": "^1.17.6",
+    "sinon-as-promised": "^4.0.2",
     "supertest": "^2.0.1"
   }
 }

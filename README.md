@@ -116,9 +116,9 @@ Base url : `/api/wfm/user`
 
 | resource | parameters | method | returns |
 | -------- | ------ | ------- | ---- |
-| /auth | all | username, password | `{satus: 'ok', userId: username, sessionToken: sessiontoken, authResponse: profileData}` |
+| /auth | all | username, password | `{satus: 'ok', userId: userId, sessionToken: sessiontoken, authResponse: profileData}` |
 | /verifysession | all | | `{isValid: true}` |
-| /revokesession | all | | " `{}` |
+| /revokesession | all | |  `{}` |
 
 
 
