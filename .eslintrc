@@ -13,7 +13,7 @@
     "complexity": ["warn", 20],
     "eqeqeq": "error",
     "guard-for-in": "error",
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "no-array-constructor": "error",
     "no-console": "warn",
@@ -27,7 +27,8 @@
     "space-before-blocks": "error",
     "space-before-function-paren": ["error", "never"],
     "keyword-spacing": ["error"],
-    "curly": ["error", "all"]
+    "curly": ["error", "all"],
+    "no-else-return": ["error"]
   },
   "globals": {
     "angular": false,
