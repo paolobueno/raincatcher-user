@@ -26,6 +26,7 @@
     "fh-wfm-template-build": "0.0.9",
     "grunt": "^1.0.1",
     "grunt-eslint": "^18.0.0",
+    "grunt-mocha-test": "^0.13.2",
     "grunt-shell": "1.2.1",
     "load-grunt-tasks": "^3.5.2",
     "mocha": "2.4.5",

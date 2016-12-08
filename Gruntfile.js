@@ -2,23 +2,33 @@
 
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     eslint: {
       src: ["lib/**/*.js"]
     },
-    shell: {
-      unit: {
+
+    mochaTest: {
+      test: {
+        src: ['lib/**/*-spec.js'],
         options: {
-          stdout: true,
-          stderr: true
-        },
-        command: 'env NODE_PATH=. ./node_modules/.bin/mocha -A -u exports --recursive **/*-spec.js'
+          reporter: 'Spec',
+          logErrors: true,
+          timeout: 10000,
+          run: true
+        }
       }
     }
   });
 
+  grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks("grunt-eslint");
-  grunt.registerTask('default', ['eslint']);
-  grunt.registerTask('unit', ['eslint','shell:unit']);
+  grunt.registerTask('mocha', ['mochaTest']);
+  grunt.registerTask('unit', [
+    'eslint',
+    'mocha']);
+
+  grunt.registerTask('default', ['unit']);
+
 };
