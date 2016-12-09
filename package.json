@@ -6,7 +6,7 @@
   "scripts": {
     "build": "wfm-template-build -m 'wfm.user.directives'",
     "watch": "wfm-template-build -w -m 'wfm.user.directives'",
-    "test": "node --harmony ./node_modules/.bin/grunt"
+    "test": "grunt"
   },
   "keywords": [
     "wfm",
